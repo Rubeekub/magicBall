@@ -11,7 +11,7 @@ if (!empty($_POST['question'])) {
             break;
         }
         
-    
+
     $magic=[
                 "C’est certain",
                 "C’est complètement ça",
