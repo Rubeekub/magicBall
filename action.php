@@ -1,16 +1,14 @@
 
 <?php
 include('header.php'); 
-include('footer.php');
 
-if (!empty($_POST['question'])) {
-    switch ($_POST['question']) {
-        case 'info':
-            phpinfo(); 
-            exit;
-            break;
-        }
-        
+
+
+        // if ($_POST) {
+        //     echo '<pre>';
+        //     echo htmlspecialchars(print_r($_POST, true));
+        //     echo '</pre>';
+        // }
 
     $magic=[
                 "C’est certain",
@@ -39,6 +37,7 @@ if (!empty($_POST['question'])) {
             $randomAnswer = $magic[$randomIndex];
 ?>
 
+
 <div class="container">
     <div class="content">
         <p>La question posée : </p>
@@ -50,8 +49,8 @@ if (!empty($_POST['question'])) {
     <div class= "title">
         <?php echo $randomAnswer; ?>
         </div>
+        <a href="index.php">Reset</a>
     </div>
     <?php
-    
-}
+include('footer.php');
 ?>
