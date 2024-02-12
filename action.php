@@ -1,15 +1,6 @@
 
 <?php
 include('header.php'); 
-
-
-
-        // if ($_POST) {
-        //     echo '<pre>';
-        //     echo htmlspecialchars(print_r($_POST, true));
-        //     echo '</pre>';
-        // }
-
     $magic=[
                 "C’est certain",
                 "C’est complètement ça",
@@ -31,13 +22,10 @@ include('header.php');
                 "Mes sources disent non",
                 "Ça ne se présente pas bien",
                 "Très peu probable"];
-           
             $count=count ($magic);
             $randomIndex=rand(0, $count - 1);
             $randomAnswer = $magic[$randomIndex];
 ?>
-
-
 <div class="container">
     <div class="content">
         <p>La question posée : </p>
@@ -51,6 +39,6 @@ include('header.php');
         </div>
         <a href="index.php">Reset</a>
     </div>
-    <?php
+<?php
 include('footer.php');
 ?>
