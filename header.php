@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -31,5 +30,4 @@
             }
         </style>
     </head>
-    <body>
-    
+</html>
